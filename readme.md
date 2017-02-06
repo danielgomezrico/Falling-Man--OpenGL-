@@ -1,0 +1,3 @@
+# Falling Man
+
+Old university project with some OpenGL and physics applied into a "lego figure" falling down...
