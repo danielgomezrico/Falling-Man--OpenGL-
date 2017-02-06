@@ -2,7 +2,13 @@
 // robot.c: Adaptado de OpenGL Programming Guide (Neider, Davis, Woo)
 // El movimiento de la camara se logro gracias a http://www.lighthouse3d.com/opengl/glut/index.php?6
 
-#include <GL/glut.h>
+#ifdef __APPLE__
+    #include <GLUT/glut.h>
+    #include <OpenGL/OpenGL.h>
+#elif defined _WIN32 || defined _WIN64
+    #include <GL\glut.h>
+#endif 
+
 #include <math.h>
 #include <time.h>
 #include <stdlib.h>
